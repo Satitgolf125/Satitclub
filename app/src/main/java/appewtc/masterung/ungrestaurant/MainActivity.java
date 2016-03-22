@@ -12,6 +12,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText passwordEditText;
     private Button loginButton;
     private String userString, passwordString;
+    private  MyManage myManage;
 
 
     @Override
@@ -21,6 +22,9 @@ public class MainActivity extends AppCompatActivity {
 
         //Bind Widget
         bineWidget();
+
+        //Request Database
+        myManage = new MyManage(this);
 
         //Button Controller
         buttonController();
